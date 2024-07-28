@@ -394,7 +394,7 @@ ul.some_facts label {
 /*-- //edu --*/
 /*-- skills --*/
 .expert-agile {
-	background: #0ecff7;
+	background: #8ab4dd;
 }
 .expert-agile h3.tittle-w3ls span {
     color: #fff;
@@ -445,9 +445,6 @@ ul.some_facts label {
 	margin-bottom: 0.3em;
 	font-size: 1em;
 	letter-spacing: 2px;
-}
-.expert-agiles-right {
-    margin-top: 25px;
 }
 /*-- //skills --*/
 /*-- experience-w3layouts --*/
@@ -803,13 +800,13 @@ p.copy-right-agile  a:hover{
         margin-bottom: 15px;
     }
     .expert-agiles-right img {
-        width: 100%;
+        width: 90%;
     }
     .bar_group__bar.thin {
         margin-bottom: 1.5em;
     }
     .expert-agiles-right {
-        margin-top: 10px;
+        margin-top: -25px;
     }
 }
 @media(max-width: 1080px){
