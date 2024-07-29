@@ -308,7 +308,7 @@ ul.some_facts label {
 /*-- //about --*/
 /*-- stats --*/
 .stats-w3layouts{
-    background: url(../images/bg.jpg)no-repeat center fixed;
+    background: url(../images/bg.jpg)no-repeat center;
     background-size: cover; 
 	text-align: center;
 }  
@@ -461,7 +461,7 @@ ul.some_facts label {
     background: #37c5ec;
 }
 .exce-grid1-wthree:nth-child(4) .grid-ec1{
-    background: #f9b14b;
+    background: #ff4f81;
 }
 .exce-grid1-wthree h3 {
     color: #fff;
@@ -1664,5 +1664,4 @@ p.copy-right-agile  a:hover{
         padding: 1.5em 0;
     }
 }
-
 /*--//responsive--*/
