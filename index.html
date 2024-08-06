@@ -13,16 +13,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Vita Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
-	<script type="application/x-javascript">
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
 	<!-- default-css-files -->
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
@@ -332,9 +322,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3 class="tittle-w3ls"><span>C</span>on<span>t</span>ac<span>t</span> <span>M</span>e</h3>
 			<form action="https://api.web3forms.com/submit" method="post" id="submit-form">
 				<input type="hidden" name="access_key" value="318b621c-be9e-4652-88da-9af659293423">
-				<input type="text" placeholder="Name" name="Name" required="">
-				<input type="email" placeholder="Email" name="Email" required="">
-				<textarea name="Message" placeholder="Message" required=""></textarea>
+				<input type="text" placeholder="Name" name="Name" >
+				<input type="email" placeholder="Email" name="Email" >
+				<textarea name="Message" placeholder="Message" ></textarea>
 				<div class="con-form text-center">
 					<input type="submit" value="Send">
 				</div>
@@ -383,11 +373,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //footer -->
 
 	<!-- js -->
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
 	<!-- //js -->
 	<!-- for bootstrap working -->
 	<script type="text/javascript" src="js/bootstrap.js"></script>	
 	<!-- //for bootstrap working -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 	<!--  light box js -->
 	<script src="js/lightbox-plus-jquery.min.js"></script>
 	<!-- //light box js-->
@@ -433,6 +424,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
+	 <!-- Script for validation-->
+	 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+	<script>
+		$(document).ready(function(){
+    $("#submit-form").validate({
+        rules:{
+            Name:{
+                required:true,
+                minlength:4
+            },
+            Email:{
+                required:true,
+                email:true 
+            },
+            Message:{
+                required:true
+            }
+        },
+        messages:{
+            Name:{
+                required:"Enter your name...",
+                minlength:"Enter atleast 4 dig...."
+            },
+			Email:{
+                required:"Enter email address..",
+                email:"Not a valid email...."
+            },
+			Message:{
+                required:"Enter message...",
+            }
+        }
+
+    })
+})
+	  </script>
 	
 </body>
 
